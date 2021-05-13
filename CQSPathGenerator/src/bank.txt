@@ -1,0 +1,32 @@
+15#Activities# Bank: amount transfer & Audit#10
+a1#start#0
+a2#initializeBank#1
+a3#fork#6
+a4#lock-account(A)#10
+a5#lock-account(B)#10
+a6#withdraw(amount, A)#1
+a7#deposit(amount, B)#1
+a8#unlock-account(B)#11
+a9#unlock-account(A)#11
+a10#lock-account(A)#10
+a11#readBalance(A)#1
+a12#unlock-account(A)#11
+a13#updateAudit#1
+a14#join#7
+a15#end#2
+15#edges
+a1#a2
+a2#a3
+a3#a4
+a3#a10
+a4#a5
+a5#a6
+a6#a7
+a7#a8
+a8#a9
+a9#a14
+a10#a11
+a11#a12
+a12#a13
+a13#a14
+a14#a15
